@@ -10,4 +10,9 @@ export default defineNuxtConfig({
             routes: ["/"],
         },
     },
+    typescript: {
+        strict: true,
+        shim: false,
+        typeCheck: true,
+    },
 });
