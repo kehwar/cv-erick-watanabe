@@ -1,20 +1,27 @@
 {
-  "name": "cv-erick-watanabe",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "1.0.0-beta.0",
-    "@nuxt/ui": "^2.8.1",
-    "nuxt": "^3.7.3"
-  },
-  "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.8.0"
-  }
+    "name": "cv-erick-watanabe",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint": "eslint ."
+    },
+    "dependencies": {
+        "@nuxt/ui": "^2.8.1",
+        "@nuxtjs/tailwindcss": "^6.8.0",
+        "lodash": "^4.17.21",
+        "nuxt": "^3.7.3"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "1.0.0-beta.18",
+        "@eslint/eslintrc": "^2.1.2",
+        "@nuxt/devtools": "1.0.0-beta.0",
+        "eslint": "^8.50.0",
+        "eslint-plugin-tailwindcss": "^3.13.0",
+        "typescript": "^5.2.2"
+    }
 }
