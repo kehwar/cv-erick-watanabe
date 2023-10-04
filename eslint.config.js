@@ -16,11 +16,6 @@ const compat = new FlatCompat({
 
 export default [
     ...antfu({
-        vue: true,
-        componentExts: ["vue"],
-        typescript: {
-            tsconfigPath: "tsconfig.json",
-        },
         rules: {
             "style/indent": ["error", 4, {
                 ArrayExpression: 1,
