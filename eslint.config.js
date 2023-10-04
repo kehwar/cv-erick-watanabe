@@ -1,22 +1,45 @@
+/* eslint-disable lodash/prefer-lodash-method */
 /* eslint-disable ts/no-unsafe-argument */
-/* eslint-disable ts/no-unsafe-member-access */
 /* eslint-disable ts/no-unsafe-assignment */
 /* eslint-disable ts/no-unsafe-call */
+/* eslint-disable ts/no-unsafe-member-access */
 
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import antfu from "@antfu/eslint-config";
 import { FlatCompat } from "@eslint/eslintrc";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-});
+/**
+ * @see https://eslint.org/docs/latest/use/configure/migration-guide#using-eslintrc-configs-in-flat-config
+ */
+const extend = (() => {
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = path.dirname(__filename);
+    const compat = new FlatCompat({
+        baseDirectory: __dirname,
+    });
+    return (configPath) => {
+        const configArray = compat.extends(configPath);
+        return configArray
+            // Only keep the rules
+            .filter(config => config.rules != null);
+    };
+})();
 
-export default [
-    ...antfu({
+export default antfu(
+    {},
+
+    // Extends
+    extend("plugin:tailwindcss/recommended"),
+    extend("plugin:lodash/recommended"),
+    extend("plugin:promise/recommended"),
+    extend("plugin:consistent-default-export-name/fixed"),
+
+    // Override rules
+    {
         rules: {
+
+            // Indent
             "style/indent": ["error", 4, {
                 ArrayExpression: 1,
                 CallExpression: { arguments: 1 },
@@ -57,12 +80,12 @@ export default [
             }],
             "jsonc/indent": ["error", 4],
             "vue/html-indent": ["error", 4],
+
+            // Semi
             "style/semi": ["error", "always"],
-            "style/quotes": [2, "double", { allowTemplateLiterals: true, avoidEscape: true }],
+
+            // Quotes
+            "style/quotes": ["error", "double", { allowTemplateLiterals: true, avoidEscape: true }],
         },
-    }),
-    ...compat.extends("plugin:tailwindcss/recommended"),
-    ...compat.extends("plugin:lodash/recommended"),
-    ...compat.extends("plugin:consistent-default-export-name/fixed"),
-    ...compat.extends("plugin:promise/recommended"),
-];
+    },
+);
