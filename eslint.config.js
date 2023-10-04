@@ -34,6 +34,7 @@ export default antfu(
     extend("plugin:lodash/recommended"),
     extend("plugin:promise/recommended"),
     extend("plugin:consistent-default-export-name/fixed"),
+    extend("plugin:sonarjs/recommended"),
 
     // Override rules
     {
