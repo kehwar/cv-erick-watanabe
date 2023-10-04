@@ -5,4 +5,9 @@ export default defineNuxtConfig({
     tailwindcss: {
         viewer: false,
     },
+    nitro: {
+        prerender: {
+            routes: ["/"],
+        }
+    }
 });
