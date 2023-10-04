@@ -67,4 +67,7 @@ export default [
         },
     }),
     ...compat.extends("plugin:tailwindcss/recommended"),
+    ...compat.extends("plugin:lodash/recommended"),
+    ...compat.extends("plugin:consistent-default-export-name/fixed"),
+    ...compat.extends("plugin:promise/recommended"),
 ];
