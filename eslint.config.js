@@ -21,13 +21,18 @@ const extend = (() => {
     return (configPath) => {
         const configArray = compat.extends(configPath);
         return configArray
-            // Only keep the rules
+        // Only keep the rules
             .filter(config => config.rules != null);
     };
 })();
 
 export default antfu(
-    {},
+    {
+        stylistic: {
+            indent: 4,
+            quotes: "double",
+        },
+    },
 
     // Extends
     extend("plugin:tailwindcss/recommended"),
@@ -41,52 +46,11 @@ export default antfu(
         rules: {
 
             // Indent
-            "style/indent": ["error", 4, {
-                ArrayExpression: 1,
-                CallExpression: { arguments: 1 },
-                FunctionDeclaration: { body: 1, parameters: 1 },
-                FunctionExpression: { body: 1, parameters: 1 },
-                ImportDeclaration: 1,
-                MemberExpression: 1,
-                ObjectExpression: 1,
-                SwitchCase: 1,
-                VariableDeclarator: 1,
-                flatTernaryExpressions: false,
-                ignoreComments: false,
-                ignoredNodes: [
-                    "TemplateLiteral *",
-                    "JSXElement",
-                    "JSXElement > *",
-                    "JSXAttribute",
-                    "JSXIdentifier",
-                    "JSXNamespacedName",
-                    "JSXMemberExpression",
-                    "JSXSpreadAttribute",
-                    "JSXExpressionContainer",
-                    "JSXOpeningElement",
-                    "JSXClosingElement",
-                    "JSXFragment",
-                    "JSXOpeningFragment",
-                    "JSXClosingFragment",
-                    "JSXText",
-                    "JSXEmptyExpression",
-                    "JSXSpreadChild",
-                    "TSTypeParameterInstantiation",
-                    "FunctionExpression > .params[decorators.length > 0]",
-                    "FunctionExpression > .params > :matches(Decorator, :not(:first-child))",
-                    "ClassBody.body > PropertyDefinition[decorators.length > 0] > .key",
-                ],
-                offsetTernaryExpressions: true,
-                outerIIFEBody: 1,
-            }],
             "jsonc/indent": ["error", 4],
-            "vue/html-indent": ["error", 4],
 
             // Semi
             "style/semi": ["error", "always"],
 
-            // Quotes
-            "style/quotes": ["error", "double", { allowTemplateLiterals: true, avoidEscape: true }],
         },
     },
 );
