@@ -184,12 +184,4 @@ export default antfu(
             "no-console": "off",
         },
     },
-
-    // ["*.json", "*.jsonl", "*.jsonc"]
-    {
-        files: ["*.json", "*.jsonl", "*.jsonc"],
-        rules: {
-            "jsonc/indent": ["error", 4],
-        },
-    },
 );
