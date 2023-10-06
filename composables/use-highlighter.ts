@@ -1,4 +1,4 @@
-import { chain, startsWith, trim } from "lodash";
+import { chain, startsWith } from "lodash";
 import { getHighlighter } from "shikiji";
 import type { BuiltinLanguage, BuiltinTheme } from "shikiji";
 
