@@ -39,12 +39,11 @@ export default antfu(
     extend("plugin:tailwindcss/recommended"),
     extend("plugin:lodash/recommended"),
     extend("plugin:promise/recommended"),
-    extend("plugin:consistent-default-export-name/fixed"),
     extend("plugin:sonarjs/recommended"),
 
     // ["*.js", "*.ts", "*.tsx", "*.vue"]
     {
-        files: ["*.js", "*.ts", "*.tsx", "*.vue"],
+        files: ["**/*.js", "**/*.ts", "**/*.tsx", "**/*.vue"],
         rules: {
 
             // Eslint
@@ -64,6 +63,7 @@ export default antfu(
             "lodash/prop-shorthand": ["error", "never"],
             "lodash/matches-prop-shorthand": ["error", "never"],
             "lodash/chaining": ["error", "always", 2],
+            "lodash/import-scope": ["error", "member"],
 
             // Import
             "import/order": [
@@ -170,14 +170,14 @@ export default antfu(
 
     // ["index.ts"]
     {
-        files: ["index.ts"],
+        files: ["**/index.ts"],
         rules: {
             "consistent-default-export-name/default-import-match-filename": "off",
             "import/order": "off",
         },
     },
 
-    // ["**/*.test.ts"]
+    // ["*.test.ts"]
     {
         files: ["**/*.test.ts"],
         rules: {
