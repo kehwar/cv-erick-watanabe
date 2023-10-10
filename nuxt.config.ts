@@ -25,6 +25,10 @@ export default betterDefineNuxtConfig(
             shim: false,
             typeCheck: true,
         },
+        i18n: {
+            locales: ["en", "es"],
+            defaultLocale: "en",
+        },
     },
 
     /**
