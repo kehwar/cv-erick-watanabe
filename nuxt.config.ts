@@ -5,7 +5,13 @@ import { isArray, mergeWith } from "lodash";
 export default betterDefineNuxtConfig(
     {
         devtools: { enabled: true },
-        modules: ["@nuxt/ui", "@nuxt/devtools", "@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+        modules: [
+            "@nuxt/ui",
+            "@nuxt/devtools",
+            "@nuxtjs/tailwindcss",
+            "@vueuse/nuxt",
+            "@nuxtjs/i18n",
+        ],
         tailwindcss: {
             viewer: false,
         },
