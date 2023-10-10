@@ -8,7 +8,7 @@ export default defineI18nConfig(() => ({
     messages: {
         en: { resume: resumeEN },
         es: { resume: resumeES },
-    } satisfies Record<string, DeepPartial<I18nSchema["message"]>>,
+    },
 }));
 
 declare global {
