@@ -10,7 +10,10 @@ export default betterDefineNuxtConfig(
             "@nuxt/devtools",
             "@nuxtjs/tailwindcss",
             "@vueuse/nuxt",
+            "nuxt-typed-router",
             "@nuxtjs/i18n",
+            "@vue-macros/nuxt",
+            "@pinia/nuxt",
         ],
         tailwindcss: {
             viewer: false,
@@ -26,8 +29,14 @@ export default betterDefineNuxtConfig(
             typeCheck: true,
         },
         i18n: {
-            locales: ["en", "es"],
+            locales: [
+                { code: "en", iso: "en-US", name: "English", icon: "i-twemoji-flag-united-states" },
+                { code: "es", iso: "es-ES", name: "Español", icon: "i-twemoji-flag-peru" },
+            ],
             defaultLocale: "en",
+        },
+        ui: {
+            icons: ["heroicons", "twemoji"],
         },
     },
 
