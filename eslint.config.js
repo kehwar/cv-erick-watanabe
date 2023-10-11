@@ -111,7 +111,7 @@ export default antfu(
                     cssFiles: [],
 
                     // Add exception for primevue classes
-                    whitelist: ["pi", "pi-.+", "p-.+"],
+                    whitelist: ["pi", "pi-.+", "p-.+", "i-.+"],
                 },
             ],
 
