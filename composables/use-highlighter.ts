@@ -2,8 +2,8 @@ import { chain, startsWith } from "lodash";
 import { getHighlighter } from "shikiji";
 import type { BuiltinLanguage, BuiltinTheme } from "shikiji";
 
-const themes: BuiltinTheme[] = ["github-dark", "github-light"];
-const langs: BuiltinLanguage[] = ["javascript"];
+const themes: BuiltinTheme[] = ["material-theme-darker", "material-theme-lighter"];
+const langs: BuiltinLanguage[] = ["javascript", "json"];
 const highlighter = await getHighlighter({ themes, langs });
 
 function codeToHtml(code: string, lang?: BuiltinLanguage) {

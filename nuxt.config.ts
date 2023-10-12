@@ -36,7 +36,7 @@ export default betterDefineNuxtConfig(
             defaultLocale: "en",
         },
         ui: {
-            icons: ["heroicons", "twemoji"],
+            icons: ["heroicons", "twemoji", "mdi", "bi", "lucide"],
         },
     },
 

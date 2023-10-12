@@ -26,4 +26,12 @@ html.dark .shiki span {
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;
 }
+
+.shiki {
+    @apply px-4 py-5 sm:p-6
+}
+
+.shiki code {
+    @apply text-sm font-mono block overflow-auto max-h-[50vh]
+}
 </style>
