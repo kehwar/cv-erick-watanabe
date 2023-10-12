@@ -18,11 +18,6 @@ export default betterDefineNuxtConfig(
         tailwindcss: {
             viewer: false,
         },
-        nitro: {
-            prerender: {
-                routes: ["/"],
-            },
-        },
         typescript: {
             strict: true,
             shim: false,
