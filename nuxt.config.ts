@@ -33,6 +33,14 @@ export default betterDefineNuxtConfig(
         ui: {
             icons: ["heroicons", "twemoji", "mdi", "bi", "lucide"],
         },
+        build: {
+            transpile: ["lodash"],
+        },
+        nitro: {
+            prerender: {
+                routes: ["/", "/es"],
+            },
+        },
     },
 
     /**
