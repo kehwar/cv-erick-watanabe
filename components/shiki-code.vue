@@ -6,7 +6,7 @@ const props = defineProps<{
     lang?: BuiltinLanguage
 }>();
 
-const { codeToHtml } = useHighlighter();
+const { codeToHtml } = useNuxtApp().$shikiji;
 
 const code = computed(() => {
     return codeToHtml(props.code);
