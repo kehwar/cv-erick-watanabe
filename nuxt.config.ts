@@ -4,6 +4,11 @@ import _ from "lodash";
 
 export default betterDefineNuxtConfig(
     {
+        app: {
+            head: {
+                title: "CV - Erick Watanabe",
+            },
+        },
         devtools: { enabled: true },
         modules: [
             "@nuxt/ui",
