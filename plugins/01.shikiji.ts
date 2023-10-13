@@ -10,13 +10,15 @@ export default defineNuxtPlugin(async () => {
     function codeToHtml(code: string, lang?: BuiltinLanguage) {
         if (_.startsWith(code, "````"))
             code = _.chain(code).split("\n").slice(1, -2).join("\n").value();
-        return highlighter.codeToHtml(code, {
+        let tags = highlighter.codeToHtml(code, {
             lang: lang ?? langs[0],
             themes: {
                 dark: themes[0],
                 light: themes[1],
             },
         });
+        tags = tags.replaceAll(/<span([^>]*)>(https?:\/\/\S+)<\/span>/gi, "<a$1 href=\"$2\">$2</a>");
+        return tags;
     }
 
     return {
