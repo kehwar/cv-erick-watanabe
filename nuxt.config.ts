@@ -1,6 +1,6 @@
 // @ts-expect-error No type definition
 import rollupPluginRaw from "@loonguo/rollup-plugin-raw";
-import { isArray, mergeWith } from "lodash";
+import _ from "lodash";
 
 export default betterDefineNuxtConfig(
     {
@@ -14,6 +14,7 @@ export default betterDefineNuxtConfig(
             "@nuxtjs/i18n",
             "@vue-macros/nuxt",
             "@pinia/nuxt",
+            "nuxt-lodash",
         ],
         tailwindcss: {
             viewer: false,
@@ -32,9 +33,6 @@ export default betterDefineNuxtConfig(
         },
         ui: {
             icons: ["heroicons", "twemoji", "mdi", "bi", "lucide"],
-        },
-        build: {
-            transpile: ["lodash"],
         },
         nitro: {
             prerender: {
@@ -72,5 +70,5 @@ export default betterDefineNuxtConfig(
  * @see https://lodash.com/docs/#mergeWith
  */
 function betterDefineNuxtConfig(...configs: Parameters<typeof defineNuxtConfig>[0][]) {
-    return mergeWith({}, ...configs, (obj: unknown, src: unknown) => isArray(obj) ? obj.concat(src) : undefined);
+    return _.mergeWith({}, ...configs, (obj: unknown, src: unknown) => _.isArray(obj) ? obj.concat(src) : undefined);
 }

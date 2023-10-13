@@ -38,6 +38,9 @@ dependencies:
   nuxt:
     specifier: ^3.7.4
     version: 3.7.4(eslint@8.51.0)(typescript@5.2.2)(vue-tsc@1.8.18)
+  nuxt-lodash:
+    specifier: ^2.5.0
+    version: 2.5.0
   nuxt-typed-router:
     specifier: ^3.3.1
     version: 3.3.1
@@ -2153,9 +2156,14 @@ packages:
   /@types/json-schema@7.0.13:
     resolution: {integrity: sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ==}
 
+  /@types/lodash-es@4.17.9:
+    resolution: {integrity: sha512-ZTcmhiI3NNU7dEvWLZJkzG6ao49zOIjEgIE0RgV7wbPxU0f2xT3VSAHw2gmst8swH6V0YkLRGp4qPlX/6I90MQ==}
+    dependencies:
+      '@types/lodash': 4.14.199
+    dev: false
+
   /@types/lodash@4.14.199:
     resolution: {integrity: sha512-Vrjz5N5Ia4SEzWWgIVwnHNEnb1UE1XMkvY5DGXrAeOGE9imk0hgTHh5GyDjLDJi9OTCn9oo9dXH1uToK1VRfrg==}
-    dev: true
 
   /@types/mdast@3.0.13:
     resolution: {integrity: sha512-HjiGiWedR0DVFkeNljpa6Lv4/IZU1+30VY5d747K7lBudFc3R0Ibr6yJ9lN3BE28VnZyDfLF/VB1Ql1ZIbKrmg==}
@@ -7132,6 +7140,17 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.3
+
+  /nuxt-lodash@2.5.0:
+    resolution: {integrity: sha512-nd7YrKzJH7kqMEwyAlwk0T8Fi/G1heAaWJENFm6SUIwYgR6AOigp/ryLya+JBEP+ZmGrJbIHq+mhWNdvKsLK7g==}
+    dependencies:
+      '@nuxt/kit': 3.7.4
+      '@types/lodash-es': 4.17.9
+      lodash-es: 4.17.21
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: false
 
   /nuxt-typed-router@3.3.1:
     resolution: {integrity: sha512-gO7qzU6s2C9rGQwX+d5Vkp8aQTQfKrxlCg1iSYGorvV6NZ/o71zHbyWcVACvzHCflNzQLSGhvuiPJDDvwz2JmQ==}

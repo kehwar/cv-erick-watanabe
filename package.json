@@ -23,6 +23,7 @@
         "@vueuse/nuxt": "^10.5.0",
         "lodash": "^4.17.21",
         "nuxt": "^3.7.4",
+        "nuxt-lodash": "^2.5.0",
         "nuxt-typed-router": "^3.3.1",
         "pinia": "^2.1.6",
         "shikiji": "^0.6.10"

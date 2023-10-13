@@ -1,8 +1,4 @@
 /* eslint-disable lodash/prefer-lodash-method */
-/* eslint-disable ts/no-unsafe-argument */
-/* eslint-disable ts/no-unsafe-assignment */
-/* eslint-disable ts/no-unsafe-call */
-/* eslint-disable ts/no-unsafe-member-access */
 
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -63,7 +59,7 @@ export default antfu(
             "lodash/prop-shorthand": ["error", "never"],
             "lodash/matches-prop-shorthand": ["error", "never"],
             "lodash/chaining": ["error", "always", 2],
-            "lodash/import-scope": ["error", "member"],
+            "lodash/import-scope": ["error", "full"],
 
             // Import
             "import/order": [
