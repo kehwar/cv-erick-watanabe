@@ -40,9 +40,7 @@ export default betterDefineNuxtConfig(
             icons: ["heroicons", "twemoji", "mdi", "bi", "lucide", "skill-icons"],
         },
         nitro: {
-            prerender: {
-                routes: ["/", "/es"],
-            },
+            static: true,
         },
     },
 
