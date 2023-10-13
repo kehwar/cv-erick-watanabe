@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { omit } from "lodash";
+import _ from "lodash";
 
 const resume = await useResumeData();
-const resumeString = computed(() => JSON.stringify(omit(resume.value.json, "default"), null, 2));
+const resumeString = computed(() => JSON.stringify(_.omit(resume.value.json, "default"), null, 2));
 
 useHead({
     title: "CV - Erick Watanabe",
@@ -20,7 +20,7 @@ useHead({
             </template>
             <div class="space-y-2">
                 <div>
-                    <UButton color="gray" external icon="i-lucide-file-json-2" :padded="false" :to="`json/${resume.filename}`" variant="link">
+                    <UButton color="gray" external icon="i-lucide-file-json-2" :padded="false" :to="`https://github.com/kehwar/cv-erick-watanabe/blob/main/assets/${resume.filename}/`" variant="link">
                         {{ resume.filename }}
                     </UButton>
                 </div>
