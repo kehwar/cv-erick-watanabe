@@ -14,7 +14,7 @@ const selectedLocale = computed<LocaleObject>({
 </script>
 
 <template>
-    <USelectMenu v-model="selectedLocale" class="w-32" option-attribute="name" :options="localeArray">
+    <USelectMenu v-model="selectedLocale" class="w-32" option-attribute="name" :options="localeArray" :popper="{ strategy: 'fixed' }">
         <template #label>
             <UIcon :name="selectedLocale.icon" />
             <span class="truncate">{{ selectedLocale.name }}</span>

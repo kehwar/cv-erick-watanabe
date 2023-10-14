@@ -37,7 +37,7 @@ export default betterDefineNuxtConfig(
             defaultLocale: "en",
         },
         ui: {
-            icons: ["heroicons", "twemoji", "mdi", "bi", "lucide", "skill-icons"],
+            icons: ["heroicons", "twemoji", "mdi", "bi", "lucide", "skill-icons", "gridicons"],
         },
         nitro: {
             static: true,
