@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const showBadge = ref(true);
+const showBadge = useSessionStorage("show-themes-badge", true, {});
 </script>
 
 <template>
@@ -7,10 +7,12 @@ const showBadge = ref(true);
         <UPopover :popper="{ strategy: 'fixed' }">
             <UTooltip :text="$t('themes')">
                 <UButton alt="Themes" class="rounded-full" color="gray" icon="i-gridicons-themes" size="lg" @click="showBadge = false" />
-                <span v-if="showBadge" class="fixed flex h-3 w-3 translate-x-8">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
-                    <span class="relative inline-flex h-3 w-3 rounded-full bg-sky-500" />
-                </span>
+                <ClientOnly>
+                    <span v-if="showBadge" class="fixed flex h-3 w-3 translate-x-8">
+                        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
+                        <span class="relative inline-flex h-3 w-3 rounded-full bg-sky-500" />
+                    </span>
+                </ClientOnly>
             </UTooltip>
             <template #panel>
                 <div class="grid gap-1 p-1 text-sm">
