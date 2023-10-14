@@ -9,7 +9,7 @@ const resumeString = computed(() => JSON.stringify(_.omit(resume.value.json, "de
     <UContainer>
         <UCard class="mt-10">
             <template #header>
-                <UButton color="gray" external icon="i-lucide-file-json-2" :padded="false" :to="`https://github.com/kehwar/cv-erick-watanabe/blob/main/assets/${resume.filename}/`" variant="link">
+                <UButton color="gray" external icon="i-lucide-file-json-2" :padded="false" :to="`https://github.com/kehwar/cv-erick-watanabe/blob/main/assets/resume/${resume.filename}/`" variant="link">
                     {{ resume.filename }}
                 </UButton>
             </template>
