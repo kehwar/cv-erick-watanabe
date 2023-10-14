@@ -1,11 +1,13 @@
 <script setup lang="ts">
 const showBadge = useSessionStorage("show-themes-badge", true, {});
+
+const { t: $t } = useI18n<[i18nSchema]>();
 </script>
 
 <template>
     <div class="flex gap-2">
         <UPopover :popper="{ strategy: 'fixed' }">
-            <UTooltip :text="$t('themes')">
+            <UTooltip :text="$t('menu.themes')">
                 <UButton alt="Themes" class="rounded-full" color="gray" icon="i-gridicons-themes" size="lg" @click="showBadge = false" />
                 <ClientOnly>
                     <span v-if="showBadge" class="fixed flex h-3 w-3 translate-x-8">
@@ -17,11 +19,12 @@ const showBadge = useSessionStorage("show-themes-badge", true, {});
             <template #panel>
                 <div class="grid gap-1 p-1 text-sm">
                     <UButton color="gray" icon="i-lucide-file-json-2" label="JSON Schema" :to="useLocalePath()({ name: 'json' })" variant="ghost" />
+                    <UButton color="gray" icon="i-lucide-file-code-2" label="Code-like" :to="useLocalePath()({ name: 'code-like' })" variant="ghost" />
                 </div>
             </template>
         </UPopover>
         <UPopover :popper="{ strategy: 'fixed' }">
-            <UTooltip :text="$t('settings')">
+            <UTooltip :text="$t('menu.settings')">
                 <UButton alt="Options" class="rounded-full" color="gray" icon="i-heroicons-cog-6-tooth" size="lg" />
             </UTooltip>
             <template #panel>
