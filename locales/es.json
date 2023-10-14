@@ -1,0 +1,19 @@
+{
+    "menu": {
+        "themes": "Temas",
+        "settings": "Configuracion"
+    },
+    "themes": {
+        "json": "JSON Schema",
+        "code-like": "Code-like"
+    },
+    "messages": {
+        "current": "Actualidad",
+        "roles": "Funciones"
+    },
+    "headings": {
+        "skills": "Habilidades e Intereses",
+        "cetificates": "Certificados",
+        "work": "Experiencia Laboral"
+    }
+}

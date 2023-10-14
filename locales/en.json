@@ -1,0 +1,19 @@
+{
+    "menu": {
+        "themes": "Themes",
+        "settings": "Settings"
+    },
+    "themes": {
+        "json": "JSON Schema",
+        "code-like": "Code-like"
+    },
+    "messages": {
+        "current": "Current",
+        "roles": "Roles"
+    },
+    "headings": {
+        "skills": "Skills & Interests",
+        "cetificates": "Certificates",
+        "work": "Experience"
+    }
+}
