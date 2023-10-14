@@ -1,10 +1,4 @@
 {
-    "selectedTemplate": 6,
-    "headings": {
-        "skills": "Skills & Interests",
-        "certificates": "Certificates",
-        "work": "Experience"
-    },
     "basics": {
         "name": "Erick Watanabe",
         "label": "Fullstack Developer",
@@ -70,7 +64,6 @@
         },
         {
             "position": "Assistant Developer",
-            "website": "",
             "highlights": [
                 "Develop new modules for inhouse CMR using VB.NET and SQL",
                 "Develop reports using Crystal Reports and Microsoft Excel"
@@ -82,22 +75,36 @@
     ],
     "skills": [
         {
+            "name": "Fullstack Developer",
             "keywords": [
                 "NuxtJS", "VueJS", "TailwindCSS", "HTML", "CSS", "Javascript", "Typescript", "NodeJS", "MSSQL"
-            ],
-            "name": "Fullstack Developer"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker",
+            "locale": "es-PE"
         },
         {
-            "keywords": [
-                "Spanish", "English"
-            ],
-            "name": "Languages"
+            "language": "English",
+            "fluency": "High",
+            "locale": "en-US"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Video games"
         },
         {
-            "keywords": [
-                "Video games", "Game design", "Light novels", "LitRPG"
-            ],
-            "name": "Interests"
+            "name": "Game design"
+        },
+        {
+            "name": "Light novels"
+        },
+        {
+            "name": "LitRPG"
         }
     ]
 }

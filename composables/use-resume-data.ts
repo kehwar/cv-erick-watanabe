@@ -32,6 +32,16 @@ interface Skill {
     name: string
 }
 
+interface Interest {
+    name: string
+}
+
+interface Language {
+    name: string
+    fluency: string
+    locale: string
+}
+
 interface Resume {
     selectedTemplate: number
     headings: {
@@ -48,4 +58,6 @@ interface Resume {
     certificates: Certificate[]
     work: Work[]
     skills: Skill[]
+    interests: Interest[]
+    languages: Language[]
 }

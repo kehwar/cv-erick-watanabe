@@ -1,10 +1,4 @@
 {
-    "selectedTemplate": 6,
-    "headings": {
-        "skills": "Habilidades e Intereses",
-        "certificates": "Certificados",
-        "work": "Experiencia Laboral"
-    },
     "basics": {
         "name": "Erick Watanabe",
         "label": "Desarrollador Fullstack",
@@ -70,7 +64,6 @@
         },
         {
             "position": "Asistente de Desarrollador",
-            "website": "",
             "highlights": [
                 "Desarrollo de nuevos módulos para CRM interno utilizando VB.NET y SQL",
                 "Desarrollo de informes utilizando Crystal Reports y Microsoft Excel"
@@ -82,22 +75,36 @@
     ],
     "skills": [
         {
+            "name": "Desarollador Fullstack",
             "keywords": [
                 "NuxtJS", "VueJS", "TailwindCSS", "HTML", "CSS", "Javascript", "Typescript", "NodeJS", "MSSQL"
-            ],
-            "name": "Desarrollador Fullstack"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Inglés",
+            "fluency": "Alto",
+            "locale": "en-US"
         },
         {
-            "keywords": [
-                "Inglés", "Español"
-            ],
-            "name": "Idiomas"
+            "language": "Spanish",
+            "fluency": "Nativo",
+            "locale": "es-PE"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Videojuegos"
         },
         {
-            "keywords": [
-                "Videojuegos", "Diseño de videojuegos", "Novelas ligeras", "LitRPG"
-            ],
-            "name": "Intereses"
+            "name": "Diseño de videojuegos"
+        },
+        {
+            "name": "Novelas ligeras"
+        },
+        {
+            "name": "LitRPG"
         }
     ]
 }
