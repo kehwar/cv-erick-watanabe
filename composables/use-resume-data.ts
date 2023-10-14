@@ -37,7 +37,7 @@ interface Interest {
 }
 
 interface Language {
-    name: string
+    language: string
     fluency: string
     locale: string
 }
