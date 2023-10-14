@@ -1,7 +1,7 @@
 async function getResumeData(locale: string) {
     const filename = `resume_${locale}.json`;
-    const json = await import(`assets/resume/resume_${locale}.json`) as Resume;
-    return { filename, json };
+    const resume = await import(`assets/resume/resume_${locale}.json`) as Resume;
+    return { filename, resume };
 }
 
 export async function useResumeData() {

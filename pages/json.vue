@@ -2,7 +2,7 @@
 import _ from "lodash";
 
 const resume = await useResumeData();
-const resumeString = computed(() => JSON.stringify(_.omit(resume.value.json, "default"), null, 2));
+const resumeString = computed(() => JSON.stringify(_.omit(resume.value.resume, "default"), null, 2));
 </script>
 
 <template>
