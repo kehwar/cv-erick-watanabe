@@ -43,6 +43,7 @@ interface Resume {
         name: string
         email: string
         phone: string
+        label: string
     }
     certificates: Certificate[]
     work: Work[]
