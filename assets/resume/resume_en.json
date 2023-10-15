@@ -8,14 +8,14 @@
     "certificates": [
         {
             "name": "Mastering Nuxt 3 Course",
-            "issuer": "Mastering Nuxt",
+            "issuer": "https://masteringnuxt.com",
             "url": "https://api.masteringnuxt.com/certificates/9a185246-1bc2-4d05-b0a7-d00350b8024f/download?signature=a0e93534d0269051c684734dad3d8c60cc70e83413a468acebf99757feb2a772",
             "date": "September 2023",
             "keywords": ["NuxtJS"]
         },
         {
             "name": "Mastering Nuxt Course",
-            "issuer": "Mastering Nuxt",
+            "issuer": "https://masteringnuxt.com",
             "url": "https://api.masteringnuxt.com/certificates/96a6c656-a33f-435d-80ad-125225a81fe0/download?signature=518e0557a29b463f95486b07f87f387825edc7fbadc8ba531a9580f3360a1ad9",
             "date": "July 2022",
             "keywords": ["NuxtJS"]
