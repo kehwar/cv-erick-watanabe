@@ -8,7 +8,7 @@ export default defineI18nConfig(() => ({
     locale: "en",
     messages: {
         en: localeEN,
-        es: localeES satisfies MessageSchema,
+        es: localeES,
     },
 }));
 
