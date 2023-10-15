@@ -18,8 +18,8 @@ const { t: $t } = useI18n<[i18nSchema]>();
             </UTooltip>
             <template #panel>
                 <div class="grid gap-1 p-1 text-sm">
-                    <UButton color="gray" icon="i-lucide-file-json-2" label="JSON Schema" :to="useLocalePath()({ name: 'json' })" variant="ghost" />
-                    <UButton color="gray" icon="i-lucide-file-code-2" label="Code-like" :to="useLocalePath()({ name: 'code-like' })" variant="ghost" />
+                    <UButton color="gray" icon="i-lucide-file-code-2" :label="$t('themes.code-like')" :to="useLocalePath()({ name: 'code-like' })" variant="ghost" />
+                    <UButton color="gray" icon="i-lucide-file-json-2" :label="$t('themes.json')" :to="useLocalePath()({ name: 'json' })" variant="ghost" />
                 </div>
             </template>
         </UPopover>

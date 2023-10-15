@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Json from "./json.vue";
+import CodeLike from "./code-like.vue";
 </script>
 
 <template>
-    <Json />
+    <CodeLike />
 </template>
