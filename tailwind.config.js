@@ -2,5 +2,8 @@
 
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["nuxt.config.ts"],
+    content: [
+        "nuxt.config.ts",
+        "themes/**/*.{js,ts,vue}",
+    ],
 };
