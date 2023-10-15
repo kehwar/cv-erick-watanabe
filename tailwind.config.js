@@ -5,5 +5,6 @@ export default {
     content: [
         "nuxt.config.ts",
         "themes/**/*.{js,ts,vue}",
+        "utilities/**/*.{js,ts,vue}",
     ],
 };
