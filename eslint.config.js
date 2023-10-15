@@ -60,6 +60,7 @@ export default antfu(
             "lodash/matches-prop-shorthand": ["error", "never"],
             "lodash/chaining": ["error", "always", 2],
             "lodash/import-scope": ["error", "full"],
+            "lodash/prefer-lodash-method": "off",
 
             // Import
             "import/order": [
