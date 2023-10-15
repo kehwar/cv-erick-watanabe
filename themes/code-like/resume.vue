@@ -25,7 +25,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                 <!-- Work -->
                 <section class="space-y-4 md:grow">
                     <Heading leading="/" :value="$t('headings.work')" />
-                    <div v-for="(work, index) in json.work" :key="index" class="space-y-2">
+                    <div v-for="(work, index) in json.work" :key="index" class="break-inside-avoid space-y-2">
                         <!-- Position -->
                         <div class="flex font-semibold text-purple-400">
                             <span>(</span>
@@ -58,7 +58,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                     <!-- Certificates -->
                     <section class="space-y-4">
                         <Heading leading="/" :value="$t('headings.cetificates')" />
-                        <div v-for="(certificate, index) in json.certificates" :key="index" class="space-y-2">
+                        <div v-for="(certificate, index) in json.certificates" :key="index" class="break-inside-avoid space-y-2">
                             <div class="flex items-center gap-2">
                                 <KeywordIcon :name="certificate.keywords[0]" />
                                 <NuxtLink external :to="certificate.url">
@@ -81,7 +81,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                     <section class="space-y-4">
                         <Heading leading="/" :value="$t('headings.skills')" />
                         <!-- Skills -->
-                        <div v-for="(skill, index) in json.skills" :key="index" class="space-y-2">
+                        <div v-for="(skill, index) in json.skills" :key="index" class="break-inside-avoid space-y-2">
                             <span class="font-semibold text-purple-400">{{ skill.name }}</span>
                             <div class="flex flex-wrap gap-1">
                                 <div v-for="(keyword, sIndex) in skill.keywords" :key="sIndex" class="inline-flex items-center gap-1 rounded border border-gray-400 px-1">
@@ -91,7 +91,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                             </div>
                         </div>
                         <!-- Languages -->
-                        <div class="space-y-2">
+                        <div class="break-inside-avoid space-y-2">
                             <span class="font-semibold text-purple-400">{{ $t('headings.languages') }}</span>
                             <div class="flex flex-wrap gap-1">
                                 <div v-for="(language, index) in json.languages" :key="index" class="inline-flex items-center gap-1 rounded border border-gray-400 px-1">
@@ -101,7 +101,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                             </div>
                         </div>
                         <!-- Interests -->
-                        <div class="space-y-2">
+                        <div class="break-inside-avoid space-y-2">
                             <span class="font-semibold text-purple-400">{{ $t('headings.interests') }}</span>
                             <div class="flex flex-wrap gap-1">
                                 <div v-for="(interest, index) in json.interests" :key="index" class="flex flex-wrap">
