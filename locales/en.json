@@ -13,6 +13,8 @@
     },
     "headings": {
         "skills": "Skills & Interests",
+        "languages": "Languages",
+        "interests": "Interests",
         "cetificates": "Certificates",
         "work": "Experience"
     }
