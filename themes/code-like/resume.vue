@@ -72,7 +72,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                                     {{ certificate.date }}
                                 </span>
                                 <span class="text-red-400">
-                                    <NuxtLink external :to="`https://${certificate.issuer}`">
+                                    <NuxtLink external :to="certificate.issuer">
                                         ({{ getDomain(certificate.issuer) }})
                                     </NuxtLink>
                                 </span>
