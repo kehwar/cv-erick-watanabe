@@ -11,6 +11,7 @@ const KeywordIcon = {
     "MSSQL": "i-vscode-icons-file-type-sql",
     "es-PE": "i-twemoji-flag-peru",
     "en-US": "i-twemoji-flag-united-states",
+    "GitHub": "i-mdi-github",
 };
 
 export function getKeyworkIcon(keyword: string) {
