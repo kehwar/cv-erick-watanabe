@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import getDomain from "~/utilities/get-domain";
+import getKeyworkIcon from "~/utilities/get-keyword-icon";
 import Heading from "./heading.vue";
 
 const { value: { resume: json } } = await useResumeData();
@@ -19,6 +20,20 @@ const { t: $t } = useI18n<[i18nSchema]>();
                 <span class="text-xl">
                     ({{ json.basics.label }})
                 </span>
+                <div class="flex items-center gap-2 text-sm">
+                    <div class="inline-flex items-center gap-1">
+                        <UIcon name="i-mdi-email" />
+                        <Obfuscate :value="json.basics.email" />
+                    </div>
+                    <div class="inline-flex items-center gap-1 pt-0">
+                        <span> - </span>
+                        <UIcon name="i-mdi-phone" />
+                        <Obfuscate :value="json.basics.phone" />
+                    </div>
+                    <NuxtLink v-for="(profile, index) in json.basics.profiles" :key="index" class="inline-flex items-center gap-1 pt-0 text-base print:hidden" external :to="profile.url">
+                        <UIcon :name="getKeyworkIcon(profile.network)" />
+                    </NuxtLink>
+                </div>
             </section>
             <!-- Main -->
             <section class="space-y-4 md:flex md:gap-x-8 md:space-y-0 lg:gap-x-16">
