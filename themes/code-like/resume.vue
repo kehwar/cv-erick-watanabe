@@ -21,7 +21,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                 </span>
             </section>
             <!-- Main -->
-            <section class="space-y-4 md:flex md:gap-16 md:space-y-0">
+            <section class="space-y-4 md:flex md:gap-x-8 md:space-y-0 lg:gap-x-16">
                 <!-- Work -->
                 <section class="space-y-4 md:grow">
                     <Heading leading="/" :value="$t('headings.work')" />
@@ -56,9 +56,9 @@ const { t: $t } = useI18n<[i18nSchema]>();
                     </div>
                 </section>
                 <!-- Aside -->
-                <aside class="space-y-4 md:w-96">
+                <aside class="break-inside-avoid space-y-4 md:w-96">
                     <!-- Certificates -->
-                    <section class="space-y-4">
+                    <section class="break-inside-avoid space-y-4">
                         <Heading leading="/" :value="$t('headings.cetificates')" />
                         <div v-for="(certificate, index) in json.certificates" :key="index" class="break-inside-avoid space-y-2">
                             <div class="flex items-center gap-2">
@@ -80,7 +80,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                         </div>
                     </section>
                     <!-- Skills & Interests -->
-                    <section class="space-y-4">
+                    <section class="break-inside-avoid space-y-4">
                         <Heading leading="/" :value="$t('headings.skills')" />
                         <!-- Skills -->
                         <div v-for="(skill, index) in json.skills" :key="index" class="break-inside-avoid space-y-2">
