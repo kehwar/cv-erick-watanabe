@@ -54,6 +54,12 @@ interface Resume {
         email: string
         phone: string
         label: string
+        url: string
+        profiles: {
+            network: string
+            username: string
+            url: string
+        }[]
     }
     certificates: Certificate[]
     work: Work[]

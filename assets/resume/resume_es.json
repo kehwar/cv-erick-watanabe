@@ -3,7 +3,15 @@
         "name": "Erick Watanabe",
         "label": "Desarrollador Fullstack",
         "email": "erickkwr@gmail.com",
-        "phone": "+51 933034562"
+        "phone": "+51 933034562",
+        "url": "https://cv-erick-watanabe.netlify.app",
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "kehwar",
+                "url": "https://github.com/kehwar"
+            }
+        ]
     },
     "certificates": [
         {
