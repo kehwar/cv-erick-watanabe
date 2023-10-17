@@ -10,6 +10,8 @@ const { t: $t } = useI18n<[i18nSchema]>();
 <template>
     <UContainer>
         <div class="space-y-4">
+            <!-- Spacing -->
+            <div class="h-0 print:h-8" />
             <!-- Logo -->
             <NuxtLink external :to="json.basics.url">
                 <Heading class="!text-7xl" leading="&lt;" trailing=">" value="cv" />
