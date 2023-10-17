@@ -23,54 +23,35 @@
     ],
     "work": [
         {
-            "company": "Grupo Soldamundo",
             "position": "Fullstack Developer",
+            "company": "Grupo Soldamundo",
+            "startDate": "August 2022",
             "highlights": [
                 "Develop custom web CRM using Nuxt3",
                 "Implement electronic billing"
-            ],
-            "startDate": "August 2022"
+            ]
         },
         {
-            "company": "Murdoch Sistemas SA",
             "position": "Graphic Design & Customer Service",
+            "company": "Murdoch Sistemas SA",
+            "startDate": "June 2019",
+            "endDate": "August 2022",
             "highlights": [
                 "Graphic design for prints using CorelDraw y Adobe Illustrator",
                 "Generate billing documents",
                 "Customer service"
-            ],
-            "startDate": "June 2019",
-            "endDate": "August 2022"
+            ]
         },
         {
-            "company": "Konecta Peru",
-            "position": "Customer service representative",
-            "highlights": [
-                "Telephone customer service"
-            ],
-            "startDate": "April 2019",
-            "endDate": "May 2019"
-        },
-        {
-            "position": "Developer",
-            "highlights": [
-                "Develop custom CRM for Windows using VB.NET y SQL",
-                "Develop reports using Crystal Reports y Microsoft Excel",
-                "SAP B1 integration"
-            ],
-            "company": "Grupo Soldamundo",
-            "startDate": "September 2016",
-            "endDate": "February 2020"
-        },
-        {
-            "position": "Assistant Developer",
-            "highlights": [
-                "Develop new modules for inhouse CMR using VB.NET and SQL",
-                "Develop reports using Crystal Reports and Microsoft Excel"
-            ],
+            "position": "NET Developer",
             "company": "Grupo Soldamundo",
             "startDate": "September 2015",
-            "endDate": "September 2016"
+            "endDate": "February 2019",
+            "highlights": [
+                "Develop custom CRM for Windows using VB.NET and SQL",
+                "Develop reports using Crystal Reports and Microsoft Excel",
+                "SAP B1 integration"
+            ]
         }
     ],
     "skills": [

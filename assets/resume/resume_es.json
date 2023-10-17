@@ -23,54 +23,35 @@
     ],
     "work": [
         {
-            "company": "Grupo Soldamundo",
             "position": "Desarrollador Fullstack",
+            "company": "Grupo Soldamundo",
+            "startDate": "Agosto 2022",
             "highlights": [
                 "Desarrollo de CRM web personalizado utilizando Nuxt3",
                 "Implementación de facturación electrónica"
-            ],
-            "startDate": "Agosto 2022"
+            ]
         },
         {
-            "company": "Murdoch Sistemas SA",
             "position": "Diseñador Gráfico y Servicio al Cliente",
+            "company": "Murdoch Sistemas SA",
+            "startDate": "Junio 2019",
+            "endDate": "Agosto 2022",
             "highlights": [
                 "Diseño gráfico para impresiones utilizando CorelDraw y Adobe Illustrator",
                 "Generación de documentos de facturación",
                 "Servicio al cliente"
-            ],
-            "startDate": "Junio 2019",
-            "endDate": "Agosto 2022"
-        },
-        {
-            "company": "Konecta Peru",
-            "position": "Representante de Servicio al Cliente",
-            "highlights": [
-                "Servicio al cliente telefónico"
-            ],
-            "startDate": "Abril 2019",
-            "endDate": "Mayo 2019"
+            ]
         },
         {
             "position": "Desarrollador",
+            "company": "Grupo Soldamundo",
+            "startDate": "Septiembre 2015",
+            "endDate": "Febrero 2019",
             "highlights": [
                 "Desarrollo de CRM personalizado para Windows utilizando VB.NET y SQL",
                 "Desarrollo de informes utilizando Crystal Reports y Microsoft Excel",
                 "Integración con SAP B1"
-            ],
-            "company": "Grupo Soldamundo",
-            "startDate": "Septiembre 2016",
-            "endDate": "Febrero 2020"
-        },
-        {
-            "position": "Asistente de Desarrollador",
-            "highlights": [
-                "Desarrollo de nuevos módulos para CRM interno utilizando VB.NET y SQL",
-                "Desarrollo de informes utilizando Crystal Reports y Microsoft Excel"
-            ],
-            "company": "Grupo Soldamundo",
-            "startDate": "Septiembre 2015",
-            "endDate": "Septiembre 2016"
+            ]
         }
     ],
     "skills": [
