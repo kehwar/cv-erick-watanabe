@@ -26,8 +26,10 @@ const { t: $t } = useI18n<[i18nSchema]>();
                 <section class="space-y-4 md:grow">
                     <Heading leading="/" :value="$t('headings.work')" />
                     <div v-for="(work, index) in json.work" :key="index" class="break-inside-avoid space-y-2">
+                        <!-- Divider -->
+                        <div v-if="index > 0" class="my-8 w-full border-t border-gray-400 dark:border-gray-600" />
                         <!-- Position -->
-                        <div class="flex font-semibold text-purple-400">
+                        <div class="flex font-semibold text-purple-600 dark:text-purple-400">
                             <span>(</span>
                             <span>{{ work.position }})</span>
                         </div>
@@ -82,7 +84,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                         <Heading leading="/" :value="$t('headings.skills')" />
                         <!-- Skills -->
                         <div v-for="(skill, index) in json.skills" :key="index" class="break-inside-avoid space-y-2">
-                            <span class="font-semibold text-purple-400">{{ skill.name }}</span>
+                            <span class="font-semibold text-purple-600 dark:text-purple-400">{{ skill.name }}</span>
                             <div class="flex flex-wrap gap-1">
                                 <div v-for="(keyword, sIndex) in skill.keywords" :key="sIndex" class="inline-flex items-center gap-1 rounded border border-gray-400 px-1">
                                     <KeywordIcon :name="keyword" />
@@ -92,7 +94,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                         </div>
                         <!-- Languages -->
                         <div class="break-inside-avoid space-y-2">
-                            <span class="font-semibold text-purple-400">{{ $t('headings.languages') }}</span>
+                            <span class="font-semibold text-purple-600 dark:text-purple-400">{{ $t('headings.languages') }}</span>
                             <div class="flex flex-wrap gap-1">
                                 <div v-for="(language, index) in json.languages" :key="index" class="inline-flex items-center gap-1 rounded border border-gray-400 px-1">
                                     <KeywordIcon :name="language.locale" />
@@ -102,7 +104,7 @@ const { t: $t } = useI18n<[i18nSchema]>();
                         </div>
                         <!-- Interests -->
                         <div class="break-inside-avoid space-y-2">
-                            <span class="font-semibold text-purple-400">{{ $t('headings.interests') }}</span>
+                            <span class="font-semibold text-purple-600 dark:text-purple-400">{{ $t('headings.interests') }}</span>
                             <div class="flex flex-wrap gap-1">
                                 <div v-for="(interest, index) in json.interests" :key="index" class="flex flex-wrap">
                                     <div class="inline-flex items-center gap-1 rounded border border-gray-400 px-1">
