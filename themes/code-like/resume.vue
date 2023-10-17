@@ -11,7 +11,9 @@ const { t: $t } = useI18n<[i18nSchema]>();
     <UContainer>
         <div class="space-y-4">
             <!-- Logo -->
-            <Heading class="!text-7xl" leading="&lt;" trailing=">" value="cv" />
+            <NuxtLink external :to="json.basics.url">
+                <Heading class="!text-7xl" leading="&lt;" trailing=">" value="cv" />
+            </NuxtLink>
             <!-- Basics -->
             <section class="flex flex-col">
                 <span class="text-5xl">
