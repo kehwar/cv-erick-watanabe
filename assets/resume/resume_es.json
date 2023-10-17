@@ -68,6 +68,12 @@
             "keywords": [
                 "NuxtJS", "VueJS", "TailwindCSS", "HTML", "CSS", "Javascript", "Typescript", "NodeJS", "MSSQL"
             ]
+        },
+        {
+            "name": "Diseño Gráfico",
+            "keywords": [
+                "CorelDraw", "Illustrator", "Photoshop"
+            ]
         }
     ],
     "languages": [

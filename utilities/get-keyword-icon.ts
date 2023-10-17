@@ -12,6 +12,9 @@ const KeywordIcon = {
     "es-PE": "i-twemoji-flag-peru",
     "en-US": "i-twemoji-flag-united-states",
     "GitHub": "i-mdi-github",
+    "CorelDraw": "i-file-icons-coreldraw-alt text-green-600",
+    "Illustrator": "i-skill-icons-illustrator",
+    "Photoshop": "i-skill-icons-photoshop",
 };
 
 export function getKeyworkIcon(keyword: string) {
