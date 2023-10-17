@@ -53,7 +53,9 @@ const { t: $t } = useI18n<[i18nSchema]>();
                         </div>
                         <!-- Company & Date -->
                         <div class="flex flex-wrap items-center justify-between gap-2 font-semibold">
-                            <span class="self-center text-red-400">{{ work.company }}</span>
+                            <NuxtLink class="self-center text-red-400" external :to="work.url">
+                                {{ work.company }}
+                            </NuxtLink>
                             <div class="text-right text-sm text-sky-400">
                                 <span>{{ work.startDate }}</span>
                                 <span> - </span>

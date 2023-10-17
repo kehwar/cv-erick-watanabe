@@ -33,6 +33,7 @@
         {
             "position": "Desarrollador Fullstack",
             "company": "Grupo Soldamundo",
+            "url": "https://soldamundoperu.com",
             "startDate": "Agosto 2022",
             "highlights": [
                 "Desarrollo de CRM web personalizado utilizando Nuxt3",
@@ -42,6 +43,7 @@
         {
             "position": "Diseñador Gráfico y Servicio al Cliente",
             "company": "Murdoch Sistemas SA",
+            "url": "https://murdochsistemas.com",
             "startDate": "Junio 2019",
             "endDate": "Agosto 2022",
             "highlights": [
@@ -53,6 +55,7 @@
         {
             "position": "Desarrollador .NET",
             "company": "Grupo Soldamundo",
+            "url": "https://soldamundoperu.com",
             "startDate": "Septiembre 2015",
             "endDate": "Febrero 2019",
             "highlights": [

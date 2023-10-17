@@ -25,6 +25,7 @@ interface Work {
     highlights: string[]
     startDate: string
     endDate?: string
+    url: string
 }
 
 interface Skill {
