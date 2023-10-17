@@ -15,20 +15,19 @@ const { t: $t } = useI18n<[i18nSchema]>();
                 <Heading class="!text-7xl" leading="&lt;" trailing=">" value="cv" />
             </NuxtLink>
             <!-- Basics -->
-            <section class="flex flex-col">
+            <section class="flex flex-col gap-y-2">
                 <span class="text-5xl">
                     {{ json.basics.name }}
                 </span>
                 <span class="text-xl">
                     ({{ json.basics.label }})
                 </span>
-                <div class="flex items-center gap-2 text-sm">
+                <div class="flex flex-wrap items-center gap-4 text-sm">
                     <div class="inline-flex items-center gap-1">
                         <UIcon name="i-mdi-email" />
                         <Obfuscate :value="json.basics.email" />
                     </div>
                     <div class="inline-flex items-center gap-1 pt-0">
-                        <span> - </span>
                         <UIcon name="i-mdi-phone" />
                         <Obfuscate :value="json.basics.phone" />
                     </div>
@@ -51,21 +50,19 @@ const { t: $t } = useI18n<[i18nSchema]>();
                             <span>{{ work.position }})</span>
                         </div>
                         <!-- Company & Date -->
-                        <div class="flex justify-between gap-2 font-semibold">
+                        <div class="flex flex-wrap items-center justify-between gap-2 font-semibold">
                             <span class="self-center text-red-400">{{ work.company }}</span>
-                            <div class="min-w-fit text-right text-sky-400">
+                            <div class="text-right text-sm text-sky-400">
                                 <span>{{ work.startDate }}</span>
-                                <div>
-                                    <span> - </span>
-                                    <span>{{ work.endDate ?? $t('messages.current') }}</span>
-                                </div>
+                                <span> - </span>
+                                <span>{{ work.endDate ?? $t('messages.current') }}</span>
                             </div>
                         </div>
                         <!-- Roles -->
                         <div class="space-y-2">
                             <span class="font-medium">{{ $t('messages.roles') }}:</span>
                             <ul class="ml-6 list-outside list-disc">
-                                <li v-for="(hightlight, hIndex) in work.highlights" :key="hIndex">
+                                <li v-for="(hightlight, hIndex) in work.highlights" :key="hIndex" class="text-sm">
                                     {{ hightlight }}
                                 </li>
                             </ul>
